@@ -1,0 +1,2 @@
+export https_proxy=http://web-proxy.eu.softwaregrp.net:8080
+export http_proxy=http://web-proxy.eu.softwaregrp.net:8080
