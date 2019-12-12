@@ -1,0 +1,68 @@
+
+alias c='clear'
+
+## get rid of command not found ##
+alias cd..='cd ..'
+ 
+## a quick way to get out of current directory ##
+alias ..='cd ..'
+alias .2='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+
+# Stop after sending count ECHO_REQUEST packets #
+alias ping='ping -c 5'
+# Do not wait interval 1 second, go fast #
+alias fastping='ping -c 100 -s.2'
+
+
+## get top process eating memory
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+
+
+## get top process eating cpu ##
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+
+
+## set some other defaults ##
+alias df='df -H'
+alias du='du -ch'
+ 
+
+# top is atop, just like vi is vim
+alias top='atop'
+
+
+# git aliases for better git
+alias g='git'
+
+alias ga='git add'
+alias gs='git status'
+alias gcm='git commit -m'
+
+alias gp='git push'
+alias gpl='git pull'
+
+alias glo='git log --oneline'
+alias gln='git log --name-only'
+
+alias gd='git diff'
+alias gstash='git stash --save'
+
+alias gcuname='git config --global user.name'
+alias gcemail='git config --global user.email'
+
+
+
+
+
