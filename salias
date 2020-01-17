@@ -1,5 +1,9 @@
 
 alias c='clear'
+alias cls='clear'
+
+## Make sure alias work with watch ##
+alias watch='watch '
 
 ## get rid of command not found ##
 alias cd..='cd ..'
@@ -43,24 +47,40 @@ alias du='du -ch'
 alias top='atop'
 
 
-# git aliases for better git
+# GIT aliases for better git
 alias g='git'
-
 alias ga='git add'
+alias gb='git branch'
+alias gchk='git checkout'
 alias gs='git status'
 alias gcm='git commit -m'
-
-alias gp='git push'
+alias gcma='git commit --amend'
+alias gb='git branch'
+alias gps='git push'
 alias gpl='git pull'
-
 alias glo='git log --oneline'
 alias gln='git log --name-only'
-
 alias gd='git diff'
 alias gstash='git stash --save'
-
 alias gcuname='git config --global user.name'
 alias gcemail='git config --global user.email'
+alias grt='git remote'
+alias grtv='git remote -v'
+alias grta='git remote add'
+alias grtr='git remote remove'
+
+# DOCKER
+alias dk='docker'
+alias dki='docker images'
+alias dkif="docker images --format '{{.ID}}\t\t{{.Repository}}:{{.Tag}}'"
+alias dkp="docker ps --format '{{.ID}} - {{.Image}} - {{.Names}} - {{.Status}}'"
+alias dkl="docker logs"
+alias dklf="docker logs -f"
+alias dks="docker service"
+alias dkrm="docker rm"
+
+# KUBERNETES K8s
+
 
 
 

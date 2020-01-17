@@ -1,0 +1,46 @@
+ls=ls --color=auto $*
+ll=ls -l --color=auto $*
+
+prop=echo %$1%
+
+grep=grep --color=auto
+egrep=egrep --color=auto
+fgrep=fgrep --color=auto
+
+..=cd ..
+.2=cd ../..
+.3=cd ../../..
+.4=cd ../../../../
+.5=cd ../../../../..
+
+g=git $*
+ga=git add $*
+gb=git branch $*
+gchk=git checkout $*
+gs=git status $*
+gcm=git commit -m $*
+gca=git commit --amend
+gps=git push $*
+gpl=git pull $*
+glo=git log --oneline $*
+gln=git log --name-only $*
+gd=git diff $*
+gstash=git stash --save $*
+gcuname=git config --global user.name $*
+gcemail=git config --global user.email $*
+grtv=git remote -v $*
+grta=git remote add $*
+grtr=git remote remove $*
+
+dk=docker $*
+dki=docker images $*
+dkif=docker images --format '{{.ID}}\t\t{{.Repository}}:{{.Tag}}'	
+dkp=docker ps --format {{.ID}} - {{.Image}} - {{.Names}} - {{.Status}}
+dkl=docker logs $*
+dklf=docker logs -f $*
+dks=docker service $*
+dkrm=docker rm $*
+
+javadebug=java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=$1,suspend=n -jar $2 --spring.config.location=file:$3
+
+mcent=mvn clean install -DskipTests $*
