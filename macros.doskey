@@ -1,3 +1,8 @@
+;= HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor
+;= AUTORUN
+;= doskey /macrofile=<path>
+;========
+
 ;============
 ;= Navigation
 ;============
